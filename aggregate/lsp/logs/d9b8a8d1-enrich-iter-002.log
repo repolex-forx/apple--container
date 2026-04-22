@@ -1,0 +1,17 @@
+[2026-04-22T09:12:16Z] === ENRICH ITERATION 2 START | repo=apple/container sha=d9b8a8d1 ===
+[2026-04-22T09:12:16Z] [iter=2] PHASE START: enrich repo=apple/container sha=d9b8a8d1 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/d9b8a8d1-enrich-iter-002.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/d9b8a8d197c076a373ece871f3953de0d2a385a8.nq.gz
+[2026-04-22T09:12:16Z] [iter=2] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-04-22T09:12:31Z] [iter=2] AST store loaded triples=1891887 load_secs=15 mem_mb=960 MB
+[2026-04-22T09:12:31Z] [iter=2] Step 2: Finding LSP targets mem_mb=960 MB
+[2026-04-22T09:12:41Z] [iter=2] LSP targets found call_sites=12547 imports=1170 extends=0 implements=0 secs=9
+[2026-04-22T09:12:50Z] [iter=2] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=960 MB
+[2026-04-22T09:12:59Z] [iter=2] Position index built positions=110005 nodes_with_types=130173 secs=9 mem_mb=960 MB
+[2026-04-22T09:12:59Z] [iter=2] Step 3: Starting LSP resolution mem_mb=960 MB already_completed_types=[] already_completed_files=0
+[2026-04-22T09:12:59Z] [iter=2] Resolving target type target_type=call_site count=12547
+[2026-04-22T09:13:00Z] [iter=2] Target type resolved target_type=call_site resolved=0 errors=12547 secs=1 mem_mb=960 MB
+[2026-04-22T09:13:00Z] [iter=2] Resolving target type target_type=import_statement count=1170
+[2026-04-22T09:13:03Z] [iter=2] HEARTBEAT target_type=import_statement elapsed_min=0.8 files_done=0 resolved=0 errors=1170 current=Sources/CVersion/Version.c
+[2026-04-22T09:13:03Z] [iter=2] Target type resolved target_type=import_statement resolved=0 errors=1170 secs=3 mem_mb=960 MB
+[2026-04-22T09:13:04Z] [iter=2] Step 5: Writing final enrichment file triples=2344
+[2026-04-22T09:13:04Z] [iter=2] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/d9b8a8d197c076a373ece871f3953de0d2a385a8.nq.gz size_kb=31
+[2026-04-22T09:13:04Z] [iter=2] PHASE END: enrich elapsed_s=48 elapsed_min=0.8 total_triples=2344
